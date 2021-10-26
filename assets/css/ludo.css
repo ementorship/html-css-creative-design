@@ -1,0 +1,293 @@
+main.main__wrapper {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+}
+.ludo-card__wrapper {
+    width: 480px;
+    height: 480px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px rgb(128 128 128 / 40%);
+    border: 1px solid #333;
+    position: relative;
+}
+
+/* home */
+section.ludo-card__group {
+    display: flex;
+    width: 192px;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.ludo-card__home {
+    padding: 32px;
+    background-color: var(--red);
+    border: 1px solid #333;
+    width: 192px;
+    height: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.ludo-card__home-list {
+    padding: 0;
+    margin: 0;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+.ludo-card__home-list li {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+span.ludo-card__home-circle {
+    background-color: var(--red);
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 4px 3px rgb(121 121 121 / 40%);
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+/* route */
+.ludo-card__route {
+    width: 100%;
+    position: relative;
+}
+ul.ludo-card__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.ludo-card__list li {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+}
+.ludo-card__list li .fa-star-o {
+    color: #666;
+}
+.ludo-card__list li:nth-child(2),
+.ludo-card__list li:nth-child(8),
+.ludo-card__list li:nth-child(9),
+.ludo-card__list li:nth-child(10),
+.ludo-card__list li:nth-child(11),
+.ludo-card__list li:nth-child(12) {
+    background-color: var(--red);
+}
+
+/* goal */
+.ludo-card__goal::before {
+    position: absolute;
+    content: "";
+    border-top: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+    border-left: 45px solid var(--red);
+    z-index: 99;
+    top: 3px;
+    left: 1px;
+}
+.ludo-card__goal::after {
+    position: absolute;
+    content: "";
+    border-top: 48px solid transparent;
+    border-bottom: 48px solid transparent;
+    border-left: 48px solid #333;
+}
+.ludo-card__goal {
+    position: absolute;
+    width: 48px;
+    top: 0;
+    right: -48px;
+    background-color: #ddd;
+    z-index: 99;
+}
+.red__group .fa-arrow-right {
+    color: var(--red);
+}
+
+/* player 2 green */
+
+.green__group .ludo-card__home-circle {
+    background-color: var(--green);
+}
+.green__group .ludo-card__home {
+    background-color: var(--green);
+}
+.green__group .ludo-card__list li:nth-child(2),
+.green__group .ludo-card__list li:nth-child(8),
+.green__group .ludo-card__list li:nth-child(9),
+.green__group .ludo-card__list li:nth-child(10),
+.green__group .ludo-card__list li:nth-child(11),
+.green__group .ludo-card__list li:nth-child(12) {
+    background-color: var(--green);
+}
+section.ludo-card__group.green__group {
+    right: 48px;
+    top: -48px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.green__group .fa-star-o {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+.green__group .ludo-card__goal::before {
+    border-left: 45px solid var(--green);
+}
+.green__group .fa-arrow-right {
+    color: var(--green);
+}
+/* player 3 blue */
+
+.blue__group .ludo-card__home-circle {
+    background-color: var(--blue);
+}
+.blue__group .ludo-card__home {
+    background-color: var(--blue);
+}
+.blue__group .ludo-card__list li:nth-child(2),
+.blue__group .ludo-card__list li:nth-child(8),
+.blue__group .ludo-card__list li:nth-child(9),
+.blue__group .ludo-card__list li:nth-child(10),
+.blue__group .ludo-card__list li:nth-child(11),
+.blue__group .ludo-card__list li:nth-child(12) {
+    background-color: var(--blue);
+}
+section.ludo-card__group.blue__group {
+    left: 48px;
+    bottom: -48px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+.blue__group .fa-star-o {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.blue__group .ludo-card__goal::before {
+    border-left: 45px solid var(--blue);
+}
+.blue__group .fa-arrow-right {
+    color: var(--blue);
+}
+/* player 4 yellow */
+
+.yellow__group .ludo-card__home-circle {
+    background-color: var(--yellow);
+}
+.yellow__group .ludo-card__home {
+    background-color: var(--yellow);
+}
+.yellow__group .ludo-card__list li:nth-child(2),
+.yellow__group .ludo-card__list li:nth-child(8),
+.yellow__group .ludo-card__list li:nth-child(9),
+.yellow__group .ludo-card__list li:nth-child(10),
+.yellow__group .ludo-card__list li:nth-child(11),
+.yellow__group .ludo-card__list li:nth-child(12) {
+    background-color: var(--yellow);
+}
+section.ludo-card__group.yellow__group {
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.yellow__group .fa-star-o {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+.yellow__group .ludo-card__goal::before {
+    border-left: 45px solid var(--yellow);
+}
+
+.yellow__group .fa-arrow-right {
+    color: var(--yellow);
+}
+
+/* part 2 */
+
+.fa-map-marker {
+    color: #ddd;
+    font-size: 42px;
+    width: 32px;
+    position: absolute;
+    bottom: 10px;
+    filter: drop-shadow(0px -2px 1px #757575);
+    display: flex;
+    justify-content: center;
+}
+.fa-map-marker::after {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-color: var(--red);
+    border-radius: 100%;
+    top: 7px;
+    box-shadow: inset 0px 0px 4px 3px rgb(121 121 121 / 40%)
+}
+/* green */
+.green__group .fa-map-marker {
+    transform: rotate( 
+-90deg);
+    right: 15px;
+    bottom: -5px;
+}
+.green__group .fa-map-marker::after {
+    background-color: var(--green);
+}
+/* blue */
+.blue__group .fa-map-marker {
+    transform: rotate(
+90deg);
+    right: -15px;
+    bottom: -5px;
+}
+.blue__group .fa-map-marker::after {
+    background-color: var(--blue);
+}
+/* yellow */
+.yellow__group .fa-map-marker {
+    transform: rotate(-180deg);
+    right: 0px;
+    bottom: -20px;
+}
+.yellow__group .fa-map-marker::after {
+    background-color: var(--yellow);
+}
+
