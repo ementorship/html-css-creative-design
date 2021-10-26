@@ -1,0 +1,22 @@
+
+Components of Notepad Cover
+
+red header
+blue header
+
+left circular box
+left small circular box
+logo 
+
+right circular box
+right small circular box
+Notepad tagline
+numberplate 
+
+
+Colors 
+
+#028fdd - blue 
+#d7edfb - light blue
+#000000 - black
+#d84b54 - red
